@@ -15,6 +15,6 @@ interpolate:如果为True，则在两条线之间进行插值以找到精确的�
 kwargs:传递给PolyCollection
 '''
 plt.plot(X, Y2, color='red', alpha=1.00)
-plt.fill_between(X, Y2, 3, color='blue', alpha=.1)
+plt.fill_between(X, Y2,3, color='blue', alpha=.1)
 
 plt.show()
