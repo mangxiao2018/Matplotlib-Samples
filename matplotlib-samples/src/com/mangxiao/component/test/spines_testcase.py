@@ -10,11 +10,15 @@ X = np.linspace(-2 * np.pi, 2 * np.pi, 70, endpoint=True)
 Y1 = np.sin(2*X)
 Y2 = (2*X**5 + 4*X**4 - 4.8*X**3 + 1.2*X**2 + X + 1) * np.exp(-X**2)
 ax = plt.gca()
+# 设置图形最上边边线为无
 ax.spines['top'].set_color('none')
+# 设置图形最右边边线为无
 ax.spines['right'].set_color('none')
 ax.xaxis.set_ticks_position('bottom')
+# 设置作标系的原点为X轴与Y轴交叉的0点-针对Y轴
 ax.spines['bottom'].set_position(('data', 0))
 ax.yaxis.set_ticks_position('left')
+# 设置作标系的原点为X轴与Y轴交叉的0点-针对X轴
 ax.spines['left'].set_position(('data', 0))
 plt.plot(X, Y1)
 plt.plot(X, Y2)
