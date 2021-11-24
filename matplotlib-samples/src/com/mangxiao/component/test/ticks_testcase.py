@@ -18,3 +18,4 @@ plt.show()
 # 设置xticks的位置和标签
 plt.xticks(np.arange(4), ('beijing','nanjing','dongjing','xijing'))
 plt.show()
+
