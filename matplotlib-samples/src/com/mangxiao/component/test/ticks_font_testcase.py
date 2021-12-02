@@ -15,6 +15,9 @@ plt.xticks([-6.28, -3.14, 3.14, 6.28],
            [r'$-2\pi$', r'$-\pi$', r'$+\pi$', r'$+2\pi$'])
 plt.yticks([-3, -1, 0, +1, 3])
 
+print(ax.get_xticklabels())
+print(ax.get_yticklabels())
+
 for xtick in ax.get_xticklabels():
     xtick.set_fontsize(18)
     xtick.set_bbox(dict(facecolor='white', edgecolor='None', alpha=0.7))
